@@ -22,6 +22,11 @@ RUN ln -sf /usr/bin/python3.8 /usr/bin/python3
 
 RUN python3 -m pip install --no-cache-dir --upgrade pip
 
+RUN useradd --no-user-group --create-home --shell /bin/bash covid-19
+USER covid-19
+WORKDIR /home/covid-19
+ENV PATH="/home/covid-19/.local/bin:${PATH}"
+
 RUN python3 -m pip install --no-cache-dir \
     jupyter \
     cython \
@@ -31,6 +36,11 @@ RUN python3 -m pip install --no-cache-dir \
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-WORKDIR /home/COVID-19-CT
-COPY . .
+USER root
+RUN mkdir /home/covid-19/COVID-19-CT
+RUN chown -R covid-19 /home/covid-19/COVID-19-CT
+
+USER covid-19
+RUN mkdir -p ~/.jupyter && echo c.NotebookApp.ip = \"0.0.0.0\" > ~/.jupyter/jupyter_notebook_config.py
+WORKDIR /home/covid-19/COVID-19-CT
 CMD ["jupyter-notebook"]
