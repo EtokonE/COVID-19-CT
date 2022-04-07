@@ -68,7 +68,12 @@ png CT images|             -               |         ?         | 3 N/C/CAP | COV
 ## [Towards Efficient COVID-19 CT Annotation: A Benchmark for Lung and Infection Segmentation](https://github.com/JunMa11/COVID-19-CT-Seg-Benchmark)
 - Сегментация легких и патологий
 - Тестирование проводилось на данных MosMed
-- 
+- Доступны 2D и 3D модели
+
+## [Automated lung segmentation in CT under presence of severe pathologies](https://github.com/JoHof/lungmask)
+- Сегментация легких
+- Доступны модели
+- DICOM
 
 ## [Inf-Net](https://github.com/DengPingFan/Inf-Net)
 - Доступны данные
