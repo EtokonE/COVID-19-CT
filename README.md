@@ -10,11 +10,11 @@ cd COVID-19-CT
 
 ## Docker for data exploration
 ```bash
-$ docker pull etokone/functional_connectivity:latest
+$ docker pull etokone/covid-19-ct-jupyter:latest
 
 $ docker run -it --rm -p 8888:8888 \ 
 -v /path/to/COVID-19-CT/:/home/covid-19/COVID-19-CT \
-covid-19-jupyter jupyter notebook
+etokone/covid-19-ct-jupyter jupyter notebook
 ```
 
 ### TODO List:
