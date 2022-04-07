@@ -1,5 +1,7 @@
 # Обзор существующих решений
 
+
+# Классификация
 ***
 
 ## [1. CovidCTNet](https://github.com/mohofar/covidctnet)
@@ -50,3 +52,33 @@ Data format  | Segmentation of pathologies | Lung segmentation | Labels        |
 png CT images|             -               |         ?         | 3 N/C/CAP | COVIDx CT | + | Tensorflow 
 
 **Вывод** - Хорошо оформленная работа внутри крупного проекта, доступны предобученные модели
+
+
+
+
+***
+# Сегментация
+***
+## [Robust Chest CT Image Segmentation of COVID-19 Lung Infection based on limited data](https://github.com/frankkramer-lab/covid19.MIScnn)
+- обучается на очень маленьком датасете, (20 изображений)
+- Работает на базе [этого](https://github.com/frankkramer-lab/MIScnn) фреймворка для сегментации мед. изображений
+- Хороший репо, можно попробовать посегментировать
+
+***
+## [Towards Efficient COVID-19 CT Annotation: A Benchmark for Lung and Infection Segmentation](https://github.com/JunMa11/COVID-19-CT-Seg-Benchmark)
+- Сегментация легких и патологий
+- Тестирование проводилось на данных MosMed
+- 
+
+## [Inf-Net](https://github.com/DengPingFan/Inf-Net)
+- Доступны данные
+- Есть веса моделей
+- Есть мультиклассовая сегментация (фон, GGO, консолидация)
+***
+
+
+
+***
+# Datasets
+## [1. ](https://github.com/UCSD-AI4H/COVID-CT)
+- Данные двух классов плюс пара моделек
