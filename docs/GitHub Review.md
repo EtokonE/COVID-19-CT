@@ -85,5 +85,5 @@ png CT images|             -               |         ?         | 3 N/C/CAP | COV
 
 ***
 # Datasets
-## [1. ](https://github.com/UCSD-AI4H/COVID-CT)
+## [1. COVID-CT](https://github.com/UCSD-AI4H/COVID-CT)
 - Данные двух классов плюс пара моделек
