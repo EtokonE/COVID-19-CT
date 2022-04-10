@@ -129,6 +129,6 @@ dmypy.json
 .pyre/
 
 # Data
-data/
+data/raw/*
 
 .Trash*
