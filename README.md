@@ -11,7 +11,7 @@ cd COVID-19-CT
 ## Get data
 1. To get raw dicom data - please run sctipt. The data will be uploaded to the directory: ./data/raw/CT
 ```
-./bin/get_data.sh
+$ ./bin/get_data.sh
 ```
 2. To get MosMedData - please, use the [official source](https://mosmed.ai/datasets/covid19_1110/)
 
