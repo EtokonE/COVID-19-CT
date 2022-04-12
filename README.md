@@ -4,8 +4,8 @@ Classification of images obtained from the results of computed tomography studie
 ## Clone the COVID-19-CT repository.
 
 ```bash
-git clone https://github.com/EtokonE/COVID-19-CT.git
-cd COVID-19-CT
+$ git clone https://github.com/EtokonE/COVID-19-CT.git
+$ cd COVID-19-CT
 ```
 
 ## Get data
