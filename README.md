@@ -8,6 +8,13 @@ git clone https://github.com/EtokonE/COVID-19-CT.git
 cd COVID-19-CT
 ```
 
+## Get data
+1. To get raw dicom data - please run sctipt. The data will be uploaded to the directory: ./data/raw/CT
+```
+./bin/get_data.sh
+```
+2. To get MosMedData - please, use the [official source](https://mosmed.ai/datasets/covid19_1110/)
+
 ## Docker for data exploration
 ```bash
 $ docker pull etokone/covid-19-ct-jupyter:latest
@@ -22,7 +29,7 @@ etokone/covid-19-ct-jupyter jupyter notebook
 - **Обзор данных**
     - [x]  Создать репозиторий
     - [x]  Docker + Dockerhub
-    - [ ]  Авто подгрузка данных
+    - [x]  Авто подгрузка данных
     - [x]  Посмотреть на данные и проверить их
 - **Theory**
     - [x]  Теоретический обзор
